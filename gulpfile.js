@@ -6,15 +6,11 @@ var gulp = require("gulp"),
 	minifycss = require("gulp-minify-css");
 
 gulp.task("connect", function() {
+
 	connect.server({
 		root: "app",
 		livereload: true
 	});
-});
-
-gulp.task("html", function () {
-	gulp.src("./app/*.html")
-		.pipe(connect.reload());
 });
 
 gulp.task("css", function() {
@@ -29,10 +25,26 @@ gulp.task("css", function() {
 		.pipe(connect.reload());
 });
 
-gulp.task("watch", function () {
-	gulp.watch("./app/css/**/*.styl", ["css"]);
-	gulp.watch(["./app/*.html"], ["html"]);
+gulp.task("html", function () {
+
+	gulp.src("./app/*.html")
+		.pipe(connect.reload());
 });
 
-gulp.task("default", ["connect", "watch"]);
+gulp.task("js", function () {
+
+	gulp.src("./app/js/**/*.js")
+		.pipe(connect.reload());
+});
+
+gulp.task("watch", function () {
+
+	gulp.watch("./app/css/**/*.styl", ["css"]);
+
+	gulp.watch(["./app/*.html"], ["html"]);
+
+	gulp.watch(["./app/js/**/*.js"], ["js"]);
+});
+
 gulp.task("build", ["css"]);
+gulp.task("default", ["connect", "watch"]);
