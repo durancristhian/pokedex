@@ -1,0 +1,4 @@
+pokedex
+=======
+
+Hecho con angularjs
