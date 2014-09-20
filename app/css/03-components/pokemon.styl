@@ -1,0 +1,124 @@
+.pokemon
+	border 1px solid #ccc
+	border-radius 5px
+	box-shadow 2px 2px 2px rgba(0, 0, 0, .05)
+
+	img
+		display block
+		margin 0 auto
+		max-height 150px
+		max-width 150px
+
+	ul
+		list-style none
+		margin 0
+		padding 0
+
+		li
+			background white
+			border-bottom 1px solid #ccc
+			padding .75em 1em
+
+			&:first-child
+				padding-top 2.5em
+
+			&:last-child
+				border-bottom none
+				border-bottom-left-radius 5px
+				border-bottom-right-radius 5px
+
+			&.pokemon-evolution
+				text-align center
+
+				*
+					display inline-block
+					padding 0 10px
+					vertical-align middle
+
+			span, strong
+				display inline-block
+				margin-right 10px
+				vertical-align middle
+
+			strong
+				margin-right 25px
+
+			.ability
+				background white
+				border 1px solid #ccc
+
+			.grass
+				background #27ae60
+				border 1px solid darken(#27ae60, 25%)
+				color white
+
+			.poison
+				background #8e44ad
+				border 1px solid darken(#8e44ad, 25%)
+				color white
+
+			.value
+				background #e74c3c
+				border 1px solid darken(#e74c3c, 25%)
+				color white
+
+			.label
+				border-radius 5px
+				font-weight bold
+				padding 5px 10px
+
+	.pokemon-header
+		background white
+		border-bottom 1px solid #ccc
+		border-top-left-radius 5px
+		border-top-right-radius 5px
+		margin-bottom 1em
+		padding .5em
+		text-align center
+
+		*
+			display inline-block
+			margin 0
+			vertical-align middle
+
+		p
+			margin-left 1em
+			margin-right 1em
+
+		.number
+			background white
+			border 1px solid #ccc
+			border-radius 5px
+			padding 5px 15px
+
+	.pokemon-tabs
+		border-bottom 1px solid #ccc
+		border-top 1px solid #ccc
+		margin-top 2em
+
+		a
+			display block
+			padding 1em 0
+			position relative
+			text-align center
+
+			&.active .ion-arrow-down-b
+				bottom -21px
+				color #ccc
+				display block
+				font-size 30px
+				left 0
+				position absolute
+				width 100%
+
+			span
+				display inline-block
+				vertical-align middle
+
+				&[class*="ion-"]
+					color #aaa
+					font-size 1.25em
+					margin-right 10px
+
+			.ion-arrow-down-b
+				display none
