@@ -34,4 +34,44 @@
 			this.tab = tab;
 		}
 	});
+
+	pokedex.filter("imageFilter", function () {
+
+		return function (input) {
+
+			return "/img/" + input.toLowerCase() + ".png";
+		};
+	});
+
+	pokedex.controller("commentsController", function () {
+
+		this.showPanel = false;
+		this.comments = [];
+		this.comment = {};
+
+		this.toggle = function () {
+
+			this.showPanel = !this.showPanel;
+		};
+
+		this.anonymousChanged = function () {
+
+			if(this.comment.anonymous) {
+
+				this.comment.email = "";
+			}
+		};
+
+		this.addComment = function () {
+
+			if(this.comment.body && (this.comment.email || !this.comment.email && this.comment.anonymous)) {
+
+				this.comment.date = Date.now();
+
+				this.comments.push(this.comment);
+
+				this.comment = {};
+			}
+		};
+	});
 })();

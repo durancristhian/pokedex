@@ -26,6 +26,26 @@ h1 {
   max-width: 500px;
   padding: 25px 20px;
 }
+.button-error,
+.button-secondary,
+.button-success,
+.button-warning {
+  color: #fff;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+.button-error {
+  background: #ca3c3c;
+}
+.button-secondary {
+  background: #42b8dd;
+}
+.button-success {
+  background: #1cb841;
+}
+.button-warning {
+  background: #df7514;
+}
 #header {
   background: #fff;
   border-bottom: 1px solid #ccc;
@@ -53,11 +73,6 @@ h1 {
 }
 .pokemon ul li:first-child {
   padding-top: 2.5em;
-}
-.pokemon ul li:last-child {
-  border-bottom: none;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 .pokemon ul li.pokemon-evolution {
   text-align: center;
@@ -99,6 +114,61 @@ h1 {
   border-radius: 5px;
   font-weight: bold;
   padding: 5px 10px;
+}
+.pokemon .pokemon-comments {
+  margin: 2em 0 1em;
+  padding: 0 1em;
+}
+.pokemon .pokemon-comments form {
+  margin: 1.5em 0 0.5em;
+}
+.pokemon .pokemon-comments .comment {
+  border-left: 5px solid #ccc;
+  margin: 1em 0;
+  overflow: hidden;
+  padding-left: 1em;
+}
+.pokemon .pokemon-comments .comment:last-child {
+  margin-bottom: 0;
+}
+.pokemon .pokemon-comments .comment a {
+  color: #ca3c3c;
+  font-weight: bold;
+}
+.pokemon .pokemon-comments .comment p {
+  margin: 0.25em 0;
+}
+.pokemon .pokemon-comments .comment .author {
+  color: #666;
+  font-size: 0.85em;
+}
+.pokemon .pokemon-comments .comments-panel {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 1em 0;
+  padding: 1em;
+}
+.pokemon .pokemon-comments .comments-panel h3 {
+  margin: 0.4em 0 0;
+}
+.pokemon .pokemon-comments .comments-panel .line {
+  border-bottom: 1px solid #ccc;
+  margin: 2em 0;
+}
+.pokemon .pokemon-comments .comments-panel .right-cell a {
+  float: right;
+}
+.pokemon .pokemon-comments .pure-button * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.pokemon .pokemon-comments .pure-button .count {
+  background: #fff;
+  border-radius: 5px;
+  color: #242424;
+  margin-left: 25px;
+  padding: 2px 8px 4px;
 }
 .pokemon .pokemon-header {
   background: #fff;
