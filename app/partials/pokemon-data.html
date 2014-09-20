@@ -1,0 +1,20 @@
+<li>
+	<strong>Types:</strong>
+	<span ng-repeat="type in pkmCtrl.pokemon.types" class="label {{type |lowercase}}">
+		{{type}}
+	</span>
+</li>
+<li>
+	<strong>Height:</strong>
+	<span>{{pkmCtrl.pokemon.height}}</span>
+</li>
+<li>
+	<strong>Weight:</strong>
+	<span>{{pkmCtrl.pokemon.weight}}</span>
+</li>
+<li>
+	<strong>Abilities:</strong>
+	<span ng-repeat="ability in pkmCtrl.pokemon.abilities" class="label ability">
+		{{ability}}
+	</span>
+</li>

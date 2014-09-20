@@ -43,32 +43,48 @@
 		};
 	});
 
-	pokedex.controller("commentsController", function () {
+	pokedex.directive("pokemonData", function () {
 
-		this.showPanel = false;
-		this.comments = [];
-		this.comment = {};
-
-		this.toggle = function () {
-
-			this.showPanel = !this.showPanel;
+		return {
+			restrict: 'E',
+			templateUrl: "/partials/pokemon-data.html"
 		};
+	});
 
-		this.anonymousChanged = function () {
+	pokedex.directive("pokemonComments", function () {
 
-			if(this.comment.anonymous) {
+		return {
+			restrict: 'E',
+			templateUrl: "/partials/pokemon-comments.html",
+			controller: function () {
 
-				this.comment.email = "";
-			}
-		};
+				this.showPanel = false;
+				this.comments = [];
+				this.comment = {};
 
-		this.addComment = function () {
+				this.toggle = function () {
 
-			this.comment.date = Date.now();
+					this.showPanel = !this.showPanel;
+				};
 
-			this.comments.push(this.comment);
+				this.anonymousChanged = function () {
 
-			this.comment = {};
+					if(this.comment.anonymous) {
+
+						this.comment.email = "";
+					}
+				};
+
+				this.addComment = function () {
+
+					this.comment.date = Date.now();
+
+					this.comments.push(this.comment);
+
+					this.comment = {};
+				};
+			},
+			controllerAs: "cmtsCtrl"
 		};
 	});
 })();
