@@ -124,10 +124,10 @@
 								<a href="" class="pure-button button-error" ng-click="cmtsCtrl.toggle()">Hide</a>
 							</div>
 						</div>
-						<form class="pure-form" ng-submit="cmtsCtrl.addComment()">
+						<form name="commentsForm" class="pure-form" ng-submit="commentsForm.$valid && cmtsCtrl.addComment()" novalidate>
 							<fieldset class="pure-group">
-								<textarea name="comment" rows="5" class="pure-input-1" placeholder="Comment" ng-model="cmtsCtrl.comment.body"></textarea>
-								<input type="email" name="email" class="pure-input-1" placeholder="Email" ng-model="cmtsCtrl.comment.email" ng-disabled="cmtsCtrl.comment.anonymous">
+								<textarea name="comment" rows="5" class="pure-input-1" placeholder="Comment" ng-model="cmtsCtrl.comment.body" required></textarea>
+								<input type="email" name="email" class="pure-input-1" placeholder="Email" ng-model="cmtsCtrl.comment.email" ng-disabled="cmtsCtrl.comment.anonymous" ng-required="!cmtsCtrl.comment.anonymous">
 							</fieldset>
 							<div class="pure-g">
 								<div class="pure-u-1-2">
@@ -140,6 +140,7 @@
 									<button type="submit" class="pure-button pure-input-1 button-success">Send comment</button>
 								</div>
 							</div>
+							<p ng-if="!commentsForm.$valid" class="invalid-form">Invalid form</p>
 						</form>
 						<div class="comment" ng-repeat="comment in cmtsCtrl.comments">
 							<p>

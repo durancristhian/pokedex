@@ -64,14 +64,11 @@
 
 		this.addComment = function () {
 
-			if(this.comment.body && (this.comment.email || !this.comment.email && this.comment.anonymous)) {
+			this.comment.date = Date.now();
 
-				this.comment.date = Date.now();
+			this.comments.push(this.comment);
 
-				this.comments.push(this.comment);
-
-				this.comment = {};
-			}
+			this.comment = {};
 		};
 	});
 })();
