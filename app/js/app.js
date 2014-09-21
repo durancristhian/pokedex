@@ -25,14 +25,12 @@
 		};
 	});
 
-	pokedex.controller("tabsController", function () {
+	pokedex.directive("pokemonHeader", function () {
 
-		this.tab = 1;
-
-		this.selectTab = function (tab) {
-
-			this.tab = tab;
-		}
+		return {
+			restrict: "A",
+			templateUrl: "/partials/pokemon-header.html"
+		};
 	});
 
 	pokedex.filter("imageFilter", function () {
@@ -43,29 +41,55 @@
 		};
 	});
 
+	pokedex.controller("tabsController", function () {
+
+		this.tab = 0;
+
+		this.selectTab = function (tab) {
+
+			if(tab === this.tab) {
+
+				this.tab = 0;
+			} else {
+
+				this.tab = tab;
+			}
+		};
+	});
+
 	pokedex.directive("pokemonData", function () {
 
 		return {
-			restrict: 'E',
+			restrict: "A",
 			templateUrl: "/partials/pokemon-data.html"
+		};
+	});
+
+	pokedex.directive("pokemonStats", function () {
+
+		return {
+			restrict: "A",
+			templateUrl: "/partials/pokemon-stats.html"
+		};
+	});
+
+	pokedex.directive("pokemonEvolution", function () {
+
+		return {
+			restrict: "A",
+			templateUrl: "/partials/pokemon-evolution.html"
 		};
 	});
 
 	pokedex.directive("pokemonComments", function () {
 
 		return {
-			restrict: 'E',
+			restrict: 'A',
 			templateUrl: "/partials/pokemon-comments.html",
 			controller: function () {
 
-				this.showPanel = false;
 				this.comments = [];
 				this.comment = {};
-
-				this.toggle = function () {
-
-					this.showPanel = !this.showPanel;
-				};
 
 				this.anonymousChanged = function () {
 

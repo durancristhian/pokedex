@@ -1,0 +1,83 @@
+.pokemon-tabs
+	border-top 1px solid gray
+
+	ul.pokemon-data, ul.pokemon-stats
+		border-bottom 1px solid gray
+		list-style none
+		margin 0
+		padding 20px 10px
+
+		li
+			margin 1em 0
+
+			&:first-child
+				margin-top 0
+
+			&:last-child
+				margin-bottom 0
+
+	ul.pokemon-stats .label
+		background redLight
+		border 1px solid red
+		margin 0
+		padding 2px 10px 4px
+
+	ul.pokemon-evolution
+		border-bottom 1px solid gray
+		list-style none
+		margin 0
+		padding 20px 10px
+		text-align center
+
+		li
+			margin-bottom 30px
+
+			&:last-child
+				margin-bottom 0
+
+		h2
+			margin 0 0 15px
+
+		.icon
+			color gray
+			display inline-block
+			font-size 25px
+			margin-top 15px
+			vertical-align top
+
+		.image-container
+			max-width 150px
+
+	.label
+		border 1px solid gray
+		border-radius 5px
+		color white
+		display inline-block
+		font-weight bold
+		margin 0 10px 10px 0
+		padding 5px 10px 4px
+		text-shadow 1px 1px 1px rgba(0, 0, 0, .15)
+		vertical-align top
+
+		&.ability
+			background yellowLight
+			border 1px solid yellow
+
+		&.grass
+			background greenLight
+			border 1px solid green
+
+		&.poison
+			background violetLight
+			border 1px solid violet
+
+	.show-tab
+		border-bottom 1px solid gray
+		display block
+		padding 10px
+
+		.icon
+			float right
+
+	.tab-info
+		color gray
