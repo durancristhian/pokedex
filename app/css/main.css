@@ -26,8 +26,6 @@ a {
 .button-success,
 .button-warning {
   color: #fff;
-  border-radius: 4px;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
 }
 .button-error {
   background: #e74c3c;
@@ -77,7 +75,7 @@ a {
   vertical-align: top;
 }
 #header .header-icons a:last-child {
-  margin-left: 15px;
+  margin-left: 5px;
 }
 #header .header-icons .ion-social-twitter {
   color: #00aced;
@@ -88,6 +86,63 @@ a {
   border-radius: 5px;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.05);
   margin: 15px 0;
+}
+.pokemon .pokemon-tabs {
+  border-top: 1px solid #ccc;
+}
+.pokemon .pokemon-tabs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pokemon .pokemon-tabs ul li {
+  margin: 10px 0;
+}
+.pokemon .pokemon-tabs ul li:first-child {
+  margin-top: 0;
+}
+.pokemon .pokemon-tabs ul li:last-child {
+  margin-bottom: 0;
+}
+.pokemon .pokemon-tabs .container {
+  border-bottom: 1px solid #ccc;
+}
+.pokemon .pokemon-tabs .label {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 10px 10px 0;
+  padding: 5px 10px 4px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+  vertical-align: top;
+}
+.pokemon .pokemon-tabs .label:last-child {
+  margin: 0;
+}
+.pokemon .pokemon-tabs .label.ability {
+  background: #f6d963;
+  border: 1px solid #f1c40f;
+}
+.pokemon .pokemon-tabs .label.grass {
+  background: #75e0a2;
+  border: 1px solid #2ecc71;
+}
+.pokemon .pokemon-tabs .label.poison {
+  background: #be93d0;
+  border: 1px solid #9b59b6;
+}
+.pokemon .pokemon-tabs .show-tab {
+  border-bottom: 1px solid #ccc;
+  display: block;
+  padding: 10px;
+}
+.pokemon .pokemon-tabs .show-tab .icon {
+  float: right;
+}
+.pokemon .pokemon-tabs .tab-info {
+  color: #ccc;
 }
 .pokemon-header {
   border-top-left-radius: 5px;
@@ -118,96 +173,33 @@ a {
   padding: 5px 10px;
   vertical-align: top;
 }
-.pokemon-tabs {
-  border-top: 1px solid #ccc;
-}
-.pokemon-tabs ul.pokemon-data,
-.pokemon-tabs ul.pokemon-stats {
-  border-bottom: 1px solid #ccc;
-  list-style: none;
-  margin: 0;
-  padding: 20px 10px;
-}
-.pokemon-tabs ul.pokemon-data li,
-.pokemon-tabs ul.pokemon-stats li {
-  margin: 1em 0;
-}
-.pokemon-tabs ul.pokemon-data li:first-child,
-.pokemon-tabs ul.pokemon-stats li:first-child {
-  margin-top: 0;
-}
-.pokemon-tabs ul.pokemon-data li:last-child,
-.pokemon-tabs ul.pokemon-stats li:last-child {
-  margin-bottom: 0;
-}
-.pokemon-tabs ul.pokemon-stats .label {
+.pokemon .pokemon-tabs .pokemon-stats .label {
   background: #ef8b80;
   border: 1px solid #e74c3c;
   margin: 0;
   padding: 2px 10px 4px;
 }
-.pokemon-tabs ul.pokemon-evolution {
-  border-bottom: 1px solid #ccc;
-  list-style: none;
-  margin: 0;
-  padding: 20px 10px;
+.pokemon .pokemon-tabs .pokemon-evolution {
   text-align: center;
 }
-.pokemon-tabs ul.pokemon-evolution li {
-  margin-bottom: 30px;
+.pokemon .pokemon-tabs .pokemon-evolution li {
+  margin-top: 0;
 }
-.pokemon-tabs ul.pokemon-evolution li:last-child {
-  margin-bottom: 0;
+.pokemon .pokemon-tabs .pokemon-evolution h2 {
+  margin: 0 0 10px;
 }
-.pokemon-tabs ul.pokemon-evolution h2 {
-  margin: 0 0 15px;
-}
-.pokemon-tabs ul.pokemon-evolution .icon {
+.pokemon .pokemon-tabs .pokemon-evolution .icon {
   color: #ccc;
   display: inline-block;
-  font-size: 25px;
-  margin-top: 15px;
+  font-size: 20px;
+  margin-top: 10px;
   vertical-align: top;
 }
-.pokemon-tabs ul.pokemon-evolution .image-container {
+.pokemon .pokemon-tabs .pokemon-evolution .image-container {
   max-width: 150px;
 }
-.pokemon-tabs .label {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  color: #fff;
-  display: inline-block;
-  font-weight: bold;
-  margin: 0 10px 10px 0;
-  padding: 5px 10px 4px;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
-  vertical-align: top;
-}
-.pokemon-tabs .label.ability {
-  background: #f6d963;
-  border: 1px solid #f1c40f;
-}
-.pokemon-tabs .label.grass {
-  background: #75e0a2;
-  border: 1px solid #2ecc71;
-}
-.pokemon-tabs .label.poison {
-  background: #be93d0;
-  border: 1px solid #9b59b6;
-}
-.pokemon-tabs .show-tab {
-  border-bottom: 1px solid #ccc;
-  display: block;
-  padding: 10px;
-}
-.pokemon-tabs .show-tab .icon {
-  float: right;
-}
-.pokemon-tabs .tab-info {
-  color: #ccc;
-}
-.pokemon-comments {
-  padding: 20px 10px;
+.pokemon-comments fieldset {
+  padding: 0 0 10px;
 }
 .pokemon-comments form {
   margin-bottom: 50px;
@@ -219,7 +211,7 @@ a {
 }
 .pokemon-comments .comment {
   border-left: 3px solid #ccc;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   padding: 5px 0 5px 10px;
 }
 .pokemon-comments .comment.no-margin-bottom {

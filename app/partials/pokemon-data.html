@@ -1,44 +1,46 @@
-<li>
-	<div class="pure-g">
-		<div class="pure-u-9-24">
-			<strong>Types:</strong>
+<ul>
+	<li>
+		<div class="pure-g">
+			<div class="pure-u-9-24">
+				<strong>Types:</strong>
+			</div>
+			<div class="pure-u-15-24">
+				<span ng-repeat="type in pkmCtrl.pokemon.types" class="label {{type |lowercase}}">
+					{{type}}
+				</span>
+			</div>
 		</div>
-		<div class="pure-u-15-24">
-			<span ng-repeat="type in pkmCtrl.pokemon.types" class="label {{type |lowercase}}">
-				{{type}}
-			</span>
+	</li>
+	<li>
+		<div class="pure-g">
+			<div class="pure-u-9-24">
+				<strong>Height:</strong>
+			</div>
+			<div class="pure-u-15-24">
+				<span>{{pkmCtrl.pokemon.height}}</span>
+			</div>
 		</div>
-	</div>
-</li>
-<li>
-	<div class="pure-g">
-		<div class="pure-u-9-24">
-			<strong>Height:</strong>
+	</li>
+	<li>
+		<div class="pure-g">
+			<div class="pure-u-9-24">
+				<strong>Weight:</strong>
+			</div>
+			<div class="pure-u-15-24">
+				<span>{{pkmCtrl.pokemon.weight}}</span>
+			</div>
 		</div>
-		<div class="pure-u-15-24">
-			<span>{{pkmCtrl.pokemon.height}}</span>
+	</li>
+	<li>
+		<div class="pure-g">
+			<div class="pure-u-9-24">
+				<strong>Abilities:</strong>
+			</div>
+			<div class="pure-u-15-24">
+				<span ng-repeat="ability in pkmCtrl.pokemon.abilities" class="label ability">
+					{{ability}}
+				</span>
+			</div>
 		</div>
-	</div>
-</li>
-<li>
-	<div class="pure-g">
-		<div class="pure-u-9-24">
-			<strong>Weight:</strong>
-		</div>
-		<div class="pure-u-15-24">
-			<span>{{pkmCtrl.pokemon.weight}}</span>
-		</div>
-	</div>
-</li>
-<li>
-	<div class="pure-g">
-		<div class="pure-u-9-24">
-			<strong>Abilities:</strong>
-		</div>
-		<div class="pure-u-15-24">
-			<span ng-repeat="ability in pkmCtrl.pokemon.abilities" class="label ability">
-				{{ability}}
-			</span>
-		</div>
-	</div>
-</li>
+	</li>
+</ul>
