@@ -15,14 +15,14 @@ a
 	color inherit
 	text-decoration none
 
+	.label
+		cursor pointer
+
 .button-error, .button-secondary, .button-success, .button-warning
 	color white
 
 .button-error
 	background red
-
-.button-secondary
-	background blue
 
 .button-secondary
 	background blueLight
@@ -41,6 +41,155 @@ a
 .image-container
 	margin 10px auto
 	max-width 250px
+
+.label
+	border 1px solid gray
+	border-radius 5px
+	color white
+	display inline-block
+	font-weight bold
+	margin 0 5px
+	padding 5px 10px 4px
+	text-shadow 1px 1px 1px rgba(0, 0, 0, .15)
+	vertical-align top
+
+	&last-child
+		margin 0
+
+	&.ability
+		background yellowLight
+		border 1px solid yellow
+		margin-bottom 10px
+		text-shadow 1px 1px 1px rgba(0, 0, 0, .25)
+
+	&.bug
+		background-color #a8b820
+		border solid 1px #6d7815
+
+		&:hover
+			background: darken(#a8b820, 25%)
+
+	&.dark
+		background-color #705848
+		border solid 1px #49392f
+
+		&:hover
+			background: darken(#705848, 25%)
+
+	&.dragon
+		background-color #7038f8
+		border solid 1px #4924a1
+
+		&:hover
+			background: darken(#7038f8, 25%)
+
+	&.electric
+		background-color #f8d030
+		border solid 1px #a1871f
+
+		&:hover
+			background: darken(#f8d030, 25%)
+
+	&.fairy
+		background-color #ee99ac
+		border solid 1px #9b6470
+
+		&:hover
+			background: darken(#ee99ac, 25%)
+
+	&.fighting
+		background-color #c03028
+		border solid 1px #7d1f1a
+
+		&:hover
+			background: darken(#c03028, 25%)
+
+	&.fire
+		background-color #f08030
+		border solid 1px #9c531f
+
+		&:hover
+			background: darken(#f08030, 25%)
+
+	&.flying
+		background-color #a890f0
+		border solid 1px #6d5e9c
+
+		&:hover
+			background: darken(#a890f0, 25%)
+
+	&.grass
+		background-color #78c850
+		border solid 1px #4e8234
+
+		&:hover
+			background: darken(#78c850, 25%)
+
+	&.ghost
+		background-color #705898
+		border solid 1px #493963
+
+		&:hover
+			background: darken(#705898, 25%)
+
+	&.ground
+		background-color #e0c068
+		border solid 1px #927d44
+
+		&:hover
+			background: darken(#e0c068, 25%)
+
+	&.ice
+		background-color #98d8d8
+		border solid 1px #638d8d
+
+		&:hover
+			background: darken(#98d8d8, 25%)
+
+	&.normal
+		background-color #a8a878
+		border solid 1px #6d6d4e
+
+		&:hover
+			background: darken(#a8a878, 25%)
+
+	&.poison
+		background-color #c183c1
+		border solid 1px #a040a0
+
+		&:hover
+			background: darken(#c183c1, 25%)
+
+	&.psychic
+		background-color #f85888
+		border solid 1px #a13959
+
+		&:hover
+			background: darken(#f85888, 25%)
+
+	&.rock
+		background-color #b8a038
+		border solid 1px #786824
+
+		&:hover
+			background: darken(#b8a038, 25%)
+
+	&.steel
+		background-color #b8b8d0
+		border solid 1px #787887
+
+		&:hover
+			background: darken(#b8b8d0, 25%)
+
+	&.water
+		background-color #6890f0
+		border solid 1px #445e9c
+
+		&:hover
+			background: darken(#6890f0, 25%)
+
+.pure-img
+	margin 0 auto
 
 .to-right
 	text-align right

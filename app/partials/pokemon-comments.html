@@ -1,18 +1,18 @@
-<form name="commentsForm" class="pure-form" ng-submit="commentsForm.$valid && cmtsCtrl.addComment()" novalidate>
+<form name="commentsForm" class="pure-form" ng-submit="commentsForm.$valid && addComment()" novalidate>
 	<fieldset class="pure-group">
-		<textarea name="comment" rows="5" class="pure-input-1" placeholder="Comment" ng-model="cmtsCtrl.comment.body" required></textarea>
-		<input type="email" name="email" class="pure-input-1" placeholder="Email" ng-model="cmtsCtrl.comment.email" ng-disabled="cmtsCtrl.comment.anonymous" ng-required="!cmtsCtrl.comment.anonymous">
+		<textarea name="comment" rows="5" class="pure-input-1" placeholder="Comment" ng-model="comment.body" required></textarea>
+		<input type="email" name="email" class="pure-input-1" placeholder="Email" ng-model="comment.email" ng-disabled="comment.anonymous" ng-required="!comment.anonymous">
 	</fieldset>
 	<label for="option-one" class="pure-checkbox">
-		<input id="option-one" type="checkbox" ng-model="cmtsCtrl.comment.anonymous" ng-change="cmtsCtrl.anonymousChanged()">
+		<input id="option-one" type="checkbox" ng-model="comment.anonymous" ng-change="anonymousChanged()">
 		Send as anonymous
 	</label>
 	<button type="submit" class="pure-button pure-input-1 button-success" ng-disabled="!commentsForm.$valid">Send comment</button>
 </form>
 
-<p class="no-comments" ng-if="!cmtsCtrl.comments.length">There is no comments</p>
+<p class="no-comments" ng-if="!comments.length">There is no comments</p>
 
-<div class="comment" ng-repeat="comment in cmtsCtrl.comments" ng-class="{'no-margin-bottom' : $last}">
+<div class="comment" ng-repeat="comment in comments" ng-class="{'no-margin-bottom' : $last}">
 	<p>
 		<strong>{{comment.body}}</strong>
 	</p>

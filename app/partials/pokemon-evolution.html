@@ -1,8 +1,8 @@
 <ul>
-	<li ng-repeat="pokemon in pkmCtrl.pokemon.evolution" class="pokemon-evolution">
+	<li ng-repeat="pokemon in pokemon.evolution" class="pokemon-evolution">
 		<h2>{{pokemon}}</h2>
 		<div class="image-container">
-			<img src="{{pokemon | imageFilter}}" alt="{{pokemon}} picture" class="pure-img">
+			<img ng-src="{{pokemon | imageFilter}}" alt="{{pokemon}} picture" class="pure-img">
 		</div>
 		<span class="icon ion-chevron-down" ng-hide="$last"></span>
 	</li>
