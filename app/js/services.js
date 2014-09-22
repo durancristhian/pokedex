@@ -10,7 +10,7 @@
 
 			var deferred = $q.defer();
 
-			$http.get("/pokemons.json")
+			$http.get("/pokemons.json", {cache: true})
 			.success(function (data) {
 
 				deferred.resolve(data);
