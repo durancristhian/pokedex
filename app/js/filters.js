@@ -23,7 +23,7 @@
 
 			return function (input) {
 
-				return "/img/pokemons/" + $filter("normalize")(input) + ".jpg";
+				return "/images/pokemons/" + $filter("normalize")(input) + ".jpg";
 			};
 		}]);
 })();
