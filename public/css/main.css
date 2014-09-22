@@ -356,6 +356,9 @@ header .header-icons .ion-social-twitter {
 .pokemon .pokemon-tabs .pokemon-comments form {
   margin-bottom: 50px;
 }
+.pokemon .pokemon-tabs .pokemon-comments input[type=checkbox] {
+  margin-right: 10px;
+}
 .pokemon .pokemon-tabs .pokemon-comments p.no-comments {
   border-top: 1px solid #ccc;
   margin: 0;
