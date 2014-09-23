@@ -6,9 +6,9 @@ var server = express();
 server.use(favicon(__dirname + '/public/images/favicon.ico'));
 server.use(express.static(__dirname + '/public'));
 
-server.get("/", function (req, res) {
+server.get("*", function (req, res) {
 
-	res.sendfile("index.html");
+	res.sendFile(__dirname + "/public/index.html");
 });
 
 server.listen(process.env.PORT || 5500);

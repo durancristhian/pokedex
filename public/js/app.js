@@ -123,6 +123,21 @@
 			};
 		})
 
+		.directive('backButton', ["$window", function ($window) {
+			return {
+				restrict: 'A',
+				link: function ($scope, element, attrs) {
+
+					element.bind('click', goBack);
+
+					function goBack() {
+
+						$window.history.back();
+					}
+				}
+			}
+		}])
+
 		.directive("pokemonComments", function () {
 
 			return {
