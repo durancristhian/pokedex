@@ -1,4 +1,4 @@
-Pokedex
+pokedex
 ----------
 
 > Hecho con angular.js
@@ -11,9 +11,9 @@ Desarrollo
 
 Screenshot
 ----------
-![MUG](https://raw.githubusercontent.com/durancristhian/pokedex/master/screenshots/website-1.png)
-![MUG](https://raw.githubusercontent.com/durancristhian/pokedex/master/screenshots/website-2.png)
-![MUG](https://raw.githubusercontent.com/durancristhian/pokedex/master/screenshots/website-3.png)
+![pokedex](https://raw.githubusercontent.com/durancristhian/pokedex/master/screenshots/website-1.png)
+![pokedex](https://raw.githubusercontent.com/durancristhian/pokedex/master/screenshots/website-2.png)
+![pokedex](https://raw.githubusercontent.com/durancristhian/pokedex/master/screenshots/website-3.png)
 
 License
 ----------
