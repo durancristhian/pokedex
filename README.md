@@ -9,7 +9,7 @@ Desarrollo
 > gulp <br>
 > node server
 
-Screenshot
+Screenshots
 ----------
 ![pokedex](https://raw.githubusercontent.com/durancristhian/pokedex/master/screenshots/website-1.png)
 ![pokedex](https://raw.githubusercontent.com/durancristhian/pokedex/master/screenshots/website-2.png)
