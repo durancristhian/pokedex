@@ -2,6 +2,7 @@ pokedex
 ----------
 
 > Hecho con angular.js
+> Puedes ver el proyecto online en [este link](http://cduran-pokedex.herokuapp.com/)
 
 Desarrollo
 ----------
