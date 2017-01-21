@@ -1,6 +1,8 @@
 pokedex
 ----------
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/durancristhian/pokedex.svg)](https://greenkeeper.io/)
+
 > Hecho con angular.js <br>
 > Puedes ver el proyecto online en [este link](http://cduran-pokedex.herokuapp.com/)
 
